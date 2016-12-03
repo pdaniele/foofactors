@@ -7,6 +7,8 @@
 #' @examples
 #'#' freq_out(iris$Species)
 freq_out <- function(x) {
-	xdf <- dplyr::data_frame(x)
-	dplyr::count(xdf, x)
+  xdf <- dplyr::data_frame(x)
+  dplyr::count(xdf, x)
 }
+
+
