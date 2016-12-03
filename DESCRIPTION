@@ -15,6 +15,6 @@ RoxygenNote: 5.0.1
 Suggests: testthat,
     knitr,
     rmarkdown
-Imports: dplyr
+Imports: dplyr,
+    stats
 VignetteBuilder: knitr
-
