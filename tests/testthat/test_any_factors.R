@@ -7,5 +7,6 @@ test_that("any_factors finds all factors in your dataframe", {
   expect_true(length(x) > 0)
   expect_false(length(y) > 0)
   expect_identical(x, 'Species')
+  expect_error(any_factors(c('a','b','c','d')))
 })
 

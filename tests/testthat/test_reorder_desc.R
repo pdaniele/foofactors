@@ -14,5 +14,6 @@ test_that("reorder_desc returns factors in descending order ", {
   expect_equal(levels(x2),levels(y2))
   expect_equal(levels(x2),levels(z2))
   expect_equal(levels(y2),levels(z2))
+  expect_error(reorder_desc(mtcars))
 })
 

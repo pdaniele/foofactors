@@ -6,4 +6,3 @@ export(fbind)
 export(freq_out)
 export(order_asis)
 export(reorder_desc)
-
