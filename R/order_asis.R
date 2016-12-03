@@ -10,6 +10,7 @@
 #' @examples
 #'#' order_asis(mtcars$cyl)
 
+
 order_asis <- function(a) {
   if(!is.vector(a)) {
     stop('I am so sorry, but this function only works for Vectors!\n',

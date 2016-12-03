@@ -11,6 +11,7 @@
 #' @export
 #' @examples
 #'#' chr_factor(factor(c('BumbleBees', 'Bees', 'Bears', 'Creates', 'Capital', 'For','Unicorns'))
+#'
 reorder_desc <- function(a) {
   if(!is.factor(a)) {
     stop('I am so sorry, but this function only works for factors!\n',

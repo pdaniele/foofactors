@@ -8,3 +8,4 @@ test_that("any_factors finds all factors in your dataframe", {
   expect_false(length(y) > 0)
   expect_identical(x, 'Species')
 })
+

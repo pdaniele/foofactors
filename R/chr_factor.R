@@ -11,6 +11,7 @@
 #' @examples
 #'#' chr_factor(factor(c('BumbleBees', 'Bees', 'Bears'))
 
+
 chr_factor <- function(a){
   if(!is.factor(a)) {
     stop('I am so sorry, but this function only works for factors!\n',

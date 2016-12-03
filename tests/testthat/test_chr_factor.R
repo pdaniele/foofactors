@@ -14,3 +14,4 @@ test_that("chr_factor accurately determines if the length of the vector is equal
   expect_false(chr_factor(a))
   expect_true(chr_factor(b))
 })
+

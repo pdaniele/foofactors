@@ -19,5 +19,6 @@ But it does give you the ability to sort your factors in descending order.
 }
 \examples{
 #' chr_factor(factor(c('BumbleBees', 'Bees', 'Bears', 'Creates', 'Capital', 'For','Unicorns'))
+
 }
 

@@ -12,6 +12,7 @@
 #'#' any_factors(iris)
 #'#' any_factors(mtcars)
 
+
 any_factors <- function(a){
   if(!is.data.frame(a)) {
     stop('I am so sorry, but this function only works for Dataframes!\n',

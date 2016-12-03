@@ -11,3 +11,4 @@ test_that("Does it create accurate frequencies", {
   expect_equal(iris_tibble$n, c(50,50,50))
 })
 
+

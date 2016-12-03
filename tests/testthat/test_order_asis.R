@@ -17,3 +17,4 @@ test_that("order_asis returns factors in the order they appear", {
   expect_false(levels(cars2)[2] == 6) #False Expectation
   expect_false(levels(cars2)[3] == 6) #False Expectation
 })
+
