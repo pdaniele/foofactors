@@ -53,7 +53,7 @@ freq_out(x)
 
 Previous code is Jenny's. Mine from here on:
 
-Ever want to know if your factors should be character? Then chr_factor is your best friend! It looks as checks if all of the elements of the vector are unique. Because if they are, you probably just want a character vector.
+Ever want to know if your factors should be character? Then chr_factor is your best friend! It checks if all of the elements of the vector are unique. Because if they are, you probably just want a character vector.
 
 ```{r}
   x <- factor(c('Brown', 'Bears', 'Bite', 'Bananas')) ## Should be Character
@@ -65,7 +65,7 @@ Ever want to know if your factors should be character? Then chr_factor is your b
 Just like that. Easy as pie. This seems silly when you're using such a small set of data, but ramp this up into a dataframe and it could be quite handy.
 
 
-Sometimes we may want to flip the order of factors, and instead order them in descending order. If this is what you want, I have just the thing to satisfy your every desire (at least do this one very tiny task).
+Sometimes we may want to flip the order of factors, and instead order them in descending order. If this is what you want, I have just the thing to satisfy your every desire (or at least do this one very tiny task).
 ```{r}
 x<- factor(c('a','b','c','d','e','f','g'))
 
@@ -74,7 +74,7 @@ levels(reorder_desc(x))
 Hooray, exactly what we want!
 
 
-Next, supposed we want to order factors as they appear in the data. Oh my goodness, what an awful task this would be. But not with foofactors. Get your copy for only 3 payments of 99.99...Ok ok. If you want to order data as it appears or "as is" use order_asis
+Next, supposed we want to order factors as they appear in the data. Oh my goodness, what an awful task this would be. But not with foofactors. Get your copy for only 3 payments of $99.99...Ok ok. If you want to order data as it appears or "as is" use order_asis
 ```{r}
 #Feed it a vector, and it will spit out the factors with the order you want
 order_asis(mtcars$cyl)
@@ -87,11 +87,10 @@ reorder_desc(factor(mtcars$cyl))
 
 ```
 
-Finally, the biggest headache for you are "Stealth Factors". They will sneak into your code and <strong>RUIN YOUR LIFE!</strong> or at least cause a minor annoyance. So I though it prudent to build a function that will inspect your dataframe factors. Just use the any_factors function to find any factors in your dataset (ha, get it?).
+Finally, one the biggest potential headaches for you are "Stealth Factors". They will sneak into your code and <strong>RUIN YOUR LIFE!</strong> or at least cause a minor annoyance. So I though it prudent to build a function that will inspect your dataframe for factors. Just use the any_factors function to find any factors in your dataset (ha, get it?).
 
 ```{r}
 any_factors(iris)
 #Bingo. Found that factor.
-
 ```
 
